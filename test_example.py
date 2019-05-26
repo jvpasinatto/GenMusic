@@ -1,5 +1,12 @@
+'''
+Usage example 1.
+Creating a random melody and progression in the G Major scale.
+Putting the result into a stereo .wav file.
+'''
+
 from GenMusic import GMusic, Melody, Progression
 import numpy as np
+
 
 a = Melody()
 a.random_melody(60000,30,"G","Major")
@@ -21,13 +28,4 @@ else:
 
 
 x = np.vstack((melodia,chord))
-GMusic.to_wav(x, 'teste2.wav')
-
-
-#a.random_progression(10,10,"C","Major")
-'''
-arrumar harmonicos e acordes
-fazer interface midi
--inclusao de velocidade de nota
--modificar tempo das notas
-'''
+GMusic.to_wav(x, 'test.wav')
