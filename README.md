@@ -10,7 +10,7 @@ Script that allows creation of random melodies and progression.
 
 ## Methods
 
-
+```python
 midi2freq(self, n:int)
 
 Converts midi note to frequency in Hz.
@@ -20,7 +20,7 @@ n (int): Midi note
 
 Returns:
 float: Frequency in Hz.
-
+```
 
 midi2note(self, n:int):
 
